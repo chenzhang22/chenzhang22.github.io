@@ -6,7 +6,7 @@ favicon: images/favicon.ico
 version: 2
 
 # Personal info
-name: Dr.Chen Zhang - 张晨
+name: Dr. Chen Zhang - 张晨
 #title: Senior Network System Administrator
 email: chenzhang22@suda.edu.cn
 website: https://chenzhang22.github.io/
@@ -48,7 +48,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Chen Zhang and I'm currently a lecturer at School of Computer Science & Technology in Soochow University. I obtained my PhD from Fudan University in 2022, supervised by Prof. Xin Peng and Prof. Bihuan Chen. My research interests include software engineering, software evolution, software testing and continuous integration. 
+  Hi, my name's Chen Zhang and I'm currently a lecturer at School of Computer Science & Technology in Soochow University. I obtained my PhD from Fudan University in 2022, supervised by Prof. Xin Peng and Prof. <a href="https://chenbihuan.github.io/">Bihuan Chen</a>. My research interests include software engineering, software evolution, software testing and continuous integration. 
 
 content:
   - title: Publications # Title for the section
