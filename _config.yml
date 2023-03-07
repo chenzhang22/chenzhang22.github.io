@@ -1,112 +1,68 @@
-# Site
-repository: sproogen/resume-theme
-favicon: images/favicon.ico
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Content configuration version
-version: 2
-
-# Personal info
-name: Dr. Chen Zhang - 张晨
-#title: Senior Network System Administrator
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Dr. Chen Zhang - 张晨
 email: chenzhang22@suda.edu.cn
-#website: https://chenzhang22.github.io/
-Office: 303, Ligong Building, Tiancizhuang Campus
-Address: No.333 Ganjiang East Road, Gusu District, Suzhou, China
-
-# Dark Mode (true/false/never)
-darkmode: false
-
-# Social links
-#twitter_username: facespics
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+#twitter_username: username
+url: https://chenzhang22.github.io/
 github_username: chenzhang22
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-#instagram_username: jameswgrant
-#linkedin_username: jameswgrant
-# xing_username: jekyll
-# pinterest_username: jekyll
-#youtube_username: globalmtb
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
+minimal_mistakes_skin: air
+locale: "en-US"
+search: true
 
-# Additional icon links
-additional_links:
-- title: 学院主页
-  icon: fas fa-globe
-  url: http://scst.suda.edu.cn/fd/61/c30505a523617/page.htm
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
+markdown: kramdown
+#remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+#remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
 
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+include:
+  - _pages
 
-# About Section
-# about_title: About Me
-about_profile_image: images/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Chen Zhang and I'm currently a lecturer at School of Computer Science & Technology in Soochow University. I received my Ph.D. from Fudan University in 2022, supervised by Prof. <a href="https://cspengxin.github.io/">Xin Peng</a> and Prof. <a href="https://chenbihuan.github.io/">Bihuan Chen</a>. I received my M.Sc. from China University of Mining and Technology in 2016, supervised by Prof. <a href="https://siee.cumt.edu.cn/info/1012/1016.htm">Dunwei Gong</a>.
-  My research focuses on intelligent software development, software evolution, software testing and continuous integration. 
-
-content:
-  - title: Publications # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: BuildFast History-Aware Build Outcome Prediction for Fast Feedback and Reduced Cost in Continuous Integration
-        link: 
-
-        quote: >
-          BuildFast: History-Aware Build Outcome Prediction for Fast Feedback and Reduced Cost in Continuous Integration
-        description: | # this will include new lines to allow paragraphs
-          
-
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: Fudan University
-        caption: September 2017 - July 2022
-        sub_title: Ph.D. Software Engineering
-        quote: >
-          
-        description: | # this will include new lines to allow paragraphs
-          Thesis: Build Failure and Performance Analysis for Continuous Integration.
-
-
-      - layout: left
-        title: China University of Mining and Technology
-        caption: September 2013 - July 2016
-        sub_title: M.Sc. Control Science and Engineering
-        quote: >
-          
-        description: | # this will include new lines to allow paragraphs
-          Thesis: Test Data Generation for Statement Coverage of Parallel Programs Based on Scheduling Sequence Selection and Genetic Algorithms.
-
-      - layout: left
-        title: China University of Mining and Technology
-        caption: September 2009 - July 2013.06
-        sub_title: B.Sc. Electrical Engineering and Automation
-        quote: >
-
-        description: | # this will include new lines to allow paragraphs
-
-
-# Footer
-footer_show_references: true
-# references_title: References on request (Override references text)
-
-# Build settings
-remote_theme: sproogen/resume-theme
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
+# Plugins (previously gems:)
 plugins:
- - jekyll-seo-tag
+  - jekyll-include-cache
+
+author:
+  name   : "Chen Zhang"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "My awesome biography constrained to a sentence or two goes here."
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/chenzhang22"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:chenzhang22@suda.edu.cn"
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  
+  # - values:
+  #     sidebar:
+  #       - title: "Another Title"
+  #         text: "More text here."
