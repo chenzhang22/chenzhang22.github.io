@@ -15,7 +15,7 @@ author_profile: true
 {: .archive__subtitle}
 
 Hi, my name's Chen Zhang and I'm currently a lecturer at School of Computer Science & Technology in Soochow University.
-I received my Ph.D. from Fudan University in 2022, supervised by Prof. [Xin Peng](https://cspengxin.github.io/) and Prof. [Bihuan](https://chenbihuan.github.io/). 
+I received my Ph.D. from Fudan University in 2022, supervised by Prof. [Xin Peng](https://cspengxin.github.io/) and Prof. [Bihuan Chen](https://chenbihuan.github.io/). 
 I received my M.Sc. from China University of Mining and Technology in 2016, supervised by Prof. <a href="https://siee.cumt.edu.cn/info/1012/1016.htm">Dunwei Gong</a>.
 My research focuses on intelligent software development, software evolution, software testing and continuous integration.
 {: .text-left }
